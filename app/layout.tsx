@@ -3,12 +3,13 @@ import { Inter } from "next/font/google";
 
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import { webConfig } from "@/data";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Adrian's Portfolio",
-  description: "Modern & Minimal JS Mastery Portfolio",
+  title: webConfig.webTitle,
+  description: webConfig.webDescription,
 };
 
 export default function RootLayout({
